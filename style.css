@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Open sans', sans-serif;
+    background-color: white;
+
+}
+.main-section {
+    background-image: url(background.jpg);
+    height: 110vh;
+    padding: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    line-height: 1.2;
+
+}
+
+h1{
+    color: white;
+    font-size: 72px;
+    font-family: 'Open sans', sans-serif;
+    font-weight: 350;
+
+}
+p{
+    color: white;
+    font-size: 16px;
+    font-family: 'Open sans', sans-serif;
+}
+.b1 {
+    background-color: #72c3e2; 
+    color: white;
+    border: none;
+    border-radius: 50px; 
+    margin-top: 30px;
+    padding: 30px 50px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-align: center;
+    text-transform: uppercase; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.b1:hover {
+    background-color: #5daacb; 
+}
+
+/* -------------------------Text- section -------------------*/
+.text-section{
+    padding: 100px;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+
+}
+
+.text-section h2{
+    color: black;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+.text-section p{
+    color: black;
+    margin-top: 20px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+/*-------------- shape-section" ------------*/
+
+.shape-section{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 0px;
+    display: flex;
+    flex: content;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.shape{
+    text-align: center;
+}
+.shape img{
+    height: 500px;
+    width: 500px;
+}
+.shape-text{
+
+padding-left: 30px;
+line-height: 1.8;
+}
+.shape-text h1{
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+}
+.shape-text h2{
+    font-size: 16px;
+    font-weight: bolder;
+    font-family: 'Open Sans', sans-serif;
+}
+.shape-text span{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*------------------s-section ------------*/
+.s-section {
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top:100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    } 
+/*------------------menu-section ------------*/
+.menu-section {
+    height: 70vh;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 15px;
+    padding-top: 50px;
+    background-color:#474C4A;
+    
+}
+
+.menu-section img {
+    width: 370px;
+    height: 370px;
+    object-fit: cover;
+    display: block;
+    position: relative;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 0.3s ease;
+    background-color: green;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.image-container:hover .hover-text {
+    opacity: 1; 
+}
+
+.image-container:hover img {
+    filter: blur(2px); 
+}
+
+
+/* -------div class="sh-section----------- */
+.sh-section{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* ----------Responsive Styles---------- */
+@media (max-width: 1200px) {
+    .main-section {
+        height: 80vh;
+        padding: 50px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .text-section {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .text-section h2 {
+        font-size: 28px;
+    }
+
+    .shape-section {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .shape img {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .shape-text h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .main-section {
+        height: auto;
+        padding: 50px 30px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .text-section {
+        padding: 50px;
+    }
+
+    .text-section h2 {
+        font-size: 24px;
+    }
+
+    .shape-section {
+        flex-direction: column;
+    }
+
+    .shape img {
+        max-width: 100%;
+    }
+
+    .shape-text h1 {
+        font-size: 26px;
+    }
+
+    .s-section, .menu-section, .sh-section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-section {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .text-section {
+        padding: 30px;
+    }
+
+    .shape-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .shape img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .shape-text h1 {
+        font-size: 22px;
+    }
+
+    .shape-text h2, 
+    .shape-text span {
+        font-size: 12px;
+    }
+
+    .s-section, .menu-section, .sh-section {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-section {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .text-section {
+        padding: 20px;
+    }
+
+    .shape-section {
+        padding: 10px;
+    }
+
+    .shape img {
+        width: 100%;
+        height: auto;
+    }
+
+    .shape-text h1 {
+        font-size: 18px;
+    }
+
+    .shape-text h2, 
+    .shape-text span {
+        font-size: 10px;
+    }
+
+    .s-section, .menu-section, .sh-section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
